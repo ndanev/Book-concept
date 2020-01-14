@@ -244,4 +244,53 @@ header ul.navbar-nav .nav-item .nav-link {
   border-radius: 20px;
   font-weight: 500;
 }
+
+#benefites {
+  background-image: url("./images/benefites-section.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 70px;
+}
+
+#benefites .benefites-right h1 {
+  font-family: "Dancing Script", cursive;
+  color: #302e2f;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#benefites .benefites-right .benefites-card {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+#benefites .benefites-right .benefites-card img {
+  width: 80px;
+  height: 80px;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+#benefites .benefites-right .benefites-card p {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #302e2f;
+  font-weight: 600;
+  margin-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */
