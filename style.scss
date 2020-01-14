@@ -1,1 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+header {
+    width: 100%;
+    background-image: url("./images/showcase-right.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .container {
+        height: 100vh;
+        position: relative;
+
+        .col-md-6 {
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+
+            .showcase-left {
+                h1 {
+                    font-family: "Dancing Script", cursive;
+                    font-weight: 700;
+                    font-size: 60px;
+                    color: #302e2f;
+                }
+
+                p {
+                    font-family: "Montserrat", sans-serif;
+                    color: #302e2f;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                .free-demo {
+                    padding: 10px 30px;
+                    border: 1px solid #302e2f;
+                    border-radius: 20px;
+                    color: #302e2f;
+                    text-transform: uppercase;
+                    font-family: "Montserrat", sans-serif;
+                    margin-right: 20px;
+                }
+
+                .sign-up {
+                    padding: 12px 45px;
+                    border-radius: 21px;
+                    text-transform: uppercase;
+                    font-family: "Montserrat", sans-serif;
+                    color: #edcb50;
+                    font-weight: 900;
+                    background-color: #302e2f;
+                }
+            }
+        }
+    }
+
+    ul.navbar-nav {
+        .nav-item {
+            margin-left: 20px;
+
+            .login,
+            .sign-up {
+                border: 1px solid #302e2f;
+                border-radius: 30px;
+                padding: 8px 30px 6px 30px;
+                transition: all 0.3s;
+            }
+
+            .sign-up {
+                background-color: #272727;
+                color: #edcb50 !important;
+                font-weight: 900;
+            }
+
+            .nav-link {
+                text-transform: uppercase;
+                font-family: "Montserrat", sans-serif;
+                color: #302e2f;
+            }
+        }
+    }
+}
