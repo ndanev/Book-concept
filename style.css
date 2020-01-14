@@ -88,4 +88,80 @@ header ul.navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", sans-serif;
   color: #302e2f;
 }
+
+#services {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+}
+
+#services h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #302e2f;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#services h1 #services-icon-1 {
+  position: absolute;
+  top: -25px;
+  margin-left: 30px;
+}
+
+#services h1 #services-icon-2 {
+  position: relative;
+  top: -20px;
+  right: -35px;
+}
+
+#services .services-desc {
+  margin-bottom: 50px;
+}
+
+#services .services-desc p {
+  font-family: "Montserrat", sans-serif;
+  color: #302e2f;
+  font-weight: 500;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 18px;
+}
+
+#services .services-card {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+#services .services-card h3 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #302e2f;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#services .services-card p {
+  font-family: "Montserrat", sans-serif;
+  color: #302e2f;
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
 /*# sourceMappingURL=style.css.map */
