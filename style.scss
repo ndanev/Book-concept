@@ -8,6 +8,16 @@ body {
     overflow-x: hidden;
 }
 
+.active-link {
+    border-bottom: 2px solid #383838;
+
+    @media (max-width: 768px) {
+        & {
+            border-bottom: 2px solid transparent;
+        }
+    }
+}
+
 header {
     width: 100%;
     background-image: url("./images/showcase-bg.png");
@@ -45,6 +55,12 @@ header {
                             font-size: 40px;
                         }
                     }
+
+                    @media (max-width: 320px) {
+                        & {
+                            font-size: 30px;
+                        }
+                    }
                 }
 
                 p {
@@ -67,10 +83,17 @@ header {
                     text-transform: uppercase;
                     font-family: "Montserrat", sans-serif;
                     margin-right: 20px;
+                    transition: all 0.3s;
 
                     @media (max-width: 768px) {
                         & {
                             padding: 10px 20px;
+                        }
+                    }
+
+                    @media (max-width: 320px) {
+                        & {
+                            padding: 10px 6px;
                         }
                     }
                 }
@@ -83,10 +106,17 @@ header {
                     color: #edcb50;
                     font-weight: 900;
                     background-color: #302e2f;
+                    transition: all 0.3s;
 
                     @media (max-width: 768px) {
                         & {
                             padding: 10px 35px;
+                        }
+                    }
+
+                    @media (max-width: 320px) {
+                        & {
+                            padding: 10px 20px;
                         }
                     }
                 }
@@ -96,14 +126,22 @@ header {
 
     ul.navbar-nav {
         .nav-item {
-            margin-left: 20px;
+            margin-left: 30px;
+
+            @media (max-width: 992px) {
+                margin-left: 0px;
+            }
 
             .login,
             .sign-up {
                 border: 1px solid #302e2f;
                 border-radius: 30px;
-                padding: 8px 30px 6px 30px;
+                padding: 8px 30px 6px 30px !important;
                 transition: all 0.3s;
+
+                &:hover {
+                    transform: scale(0.95);
+                }
             }
 
             .sign-up {
@@ -116,6 +154,9 @@ header {
                 text-transform: uppercase;
                 font-family: "Montserrat", sans-serif;
                 color: #302e2f;
+                padding-left: 0px;
+                padding-right: 0px;
+                transition: all 0.3s;
             }
         }
     }
@@ -619,6 +660,10 @@ footer {
             font-family: "Montserrat", sans-serif;
             color: #fff;
             margin-bottom: 0;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
         }
     }
 }

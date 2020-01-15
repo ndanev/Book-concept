@@ -9,6 +9,16 @@ body {
   overflow-x: hidden;
 }
 
+.active-link {
+  border-bottom: 2px solid #383838;
+}
+
+@media (max-width: 768px) {
+  .active-link {
+    border-bottom: 2px solid transparent;
+  }
+}
+
 header {
   width: 100%;
   background-image: url("./images/showcase-bg.png");
@@ -53,6 +63,12 @@ header .container .col-md-6 .showcase-left h1 {
   }
 }
 
+@media (max-width: 320px) {
+  header .container .col-md-6 .showcase-left h1 {
+    font-size: 30px;
+  }
+}
+
 header .container .col-md-6 .showcase-left p {
   font-family: "Montserrat", sans-serif;
   color: #302e2f;
@@ -73,11 +89,19 @@ header .container .col-md-6 .showcase-left .free-demo {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   margin-right: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (max-width: 768px) {
   header .container .col-md-6 .showcase-left .free-demo {
     padding: 10px 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  header .container .col-md-6 .showcase-left .free-demo {
+    padding: 10px 6px;
   }
 }
 
@@ -89,6 +113,8 @@ header .container .col-md-6 .showcase-left .sign-up {
   color: #edcb50;
   font-weight: 900;
   background-color: #302e2f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -97,17 +123,35 @@ header .container .col-md-6 .showcase-left .sign-up {
   }
 }
 
+@media (max-width: 320px) {
+  header .container .col-md-6 .showcase-left .sign-up {
+    padding: 10px 20px;
+  }
+}
+
 header ul.navbar-nav .nav-item {
-  margin-left: 20px;
+  margin-left: 30px;
+}
+
+@media (max-width: 992px) {
+  header ul.navbar-nav .nav-item {
+    margin-left: 0px;
+  }
 }
 
 header ul.navbar-nav .nav-item .login,
 header ul.navbar-nav .nav-item .sign-up {
   border: 1px solid #302e2f;
   border-radius: 30px;
-  padding: 8px 30px 6px 30px;
+  padding: 8px 30px 6px 30px !important;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+header ul.navbar-nav .nav-item .login:hover,
+header ul.navbar-nav .nav-item .sign-up:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 header ul.navbar-nav .nav-item .sign-up {
@@ -120,6 +164,10 @@ header ul.navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   color: #302e2f;
+  padding-left: 0px;
+  padding-right: 0px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #services {
@@ -665,5 +713,11 @@ footer .footer-bottom p {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  footer .footer-bottom p {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
