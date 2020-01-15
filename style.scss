@@ -261,6 +261,12 @@ header {
                 }
             }
 
+            @media (max-width: 400px) {
+                & {
+                    margin: 0 auto 20px auto;
+                }
+            }
+
             &:hover > .book-hover {
                 display: flex;
             }
