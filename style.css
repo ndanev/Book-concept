@@ -462,8 +462,20 @@ header ul.navbar-nav .nav-item .nav-link {
   margin-right: 50px;
 }
 
+@media (max-width: 768px) {
+  #happy-customers .slider-content img {
+    margin-right: 0px;
+  }
+}
+
 #happy-customers .slider-content .slider-content-right {
   position: relative;
+}
+
+@media (max-width: 768px) {
+  #happy-customers .slider-content .slider-content-right {
+    text-align: center;
+  }
 }
 
 #happy-customers .slider-content .slider-content-right h3 {
@@ -500,6 +512,17 @@ header ul.navbar-nav .nav-item .nav-link {
   right: -50px;
   z-index: -1;
   width: 100px;
+}
+
+@media (max-width: 768px) {
+  #happy-customers .slider-content .slider-content-right .slider-item-bottom {
+    position: absolute;
+    top: inherit;
+    bottom: 20px;
+    right: -50px;
+    z-index: -1;
+    width: 100px;
+  }
 }
 
 footer {

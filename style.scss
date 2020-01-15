@@ -419,10 +419,23 @@ header {
         img {
             width: 250px;
             margin-right: 50px;
+
+            @media (max-width: 768px) {
+                & {
+                    margin-right: 0px;
+                }
+            }
         }
 
         .slider-content-right {
             position: relative;
+
+            @media (max-width: 768px) {
+                & {
+                    text-align: center;
+                }
+            }
+
             h3 {
                 font-family: "Montserrat", sans-serif;
                 color: #302e2f;
@@ -457,6 +470,17 @@ header {
                 right: -50px;
                 z-index: -1;
                 width: 100px;
+
+                @media (max-width: 768px) {
+                    & {
+                        position: absolute;
+                        top: inherit;
+                        bottom: 20px;
+                        right: -50px;
+                        z-index: -1;
+                        width: 100px;
+                    }
+                }
             }
         }
     }
