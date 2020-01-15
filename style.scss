@@ -18,6 +18,52 @@ body {
     }
 }
 
+.icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #302e2f;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+    margin-right: -10px;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+button.navbar-toggler {
+    border: none;
+    outline: none !important;
+}
+
 header {
     width: 100%;
     background-image: url("./images/showcase-bg.png");
@@ -25,20 +71,17 @@ header {
     background-size: cover;
     height: 100vh;
 
+    #first-header {
+        transition: all 0.3s;
+    }
+
     .container {
-        height: 100vh;
         position: relative;
 
         .col-md-6 {
             position: absolute;
-            top: 45%;
+            top: 40%;
             transform: translateY(-50%);
-
-            @media (max-width: 768px) {
-                & {
-                    top: 50%;
-                }
-            }
 
             .showcase-left {
                 padding-left: 16px;
@@ -94,6 +137,7 @@ header {
                     @media (max-width: 320px) {
                         & {
                             padding: 10px 6px;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -125,6 +169,10 @@ header {
     }
 
     ul.navbar-nav {
+        @media (max-width: 992px) {
+            text-align: center;
+        }
+
         .nav-item {
             margin-left: 30px;
 
@@ -141,6 +189,10 @@ header {
 
                 &:hover {
                     transform: scale(0.95);
+                }
+
+                @media (max-width: 992px) {
+                    margin-bottom: 16px;
                 }
             }
 

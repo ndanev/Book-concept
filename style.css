@@ -19,6 +19,59 @@ body {
   }
 }
 
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  background-color: #302e2f;
+  display: block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  margin-right: -10px;
+}
+
+.navbar-toggler .top-bar {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 10% 10%;
+          transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+          transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+button.navbar-toggler {
+  border: none;
+  outline: none !important;
+}
+
 header {
   width: 100%;
   background-image: url("./images/showcase-bg.png");
@@ -27,22 +80,20 @@ header {
   height: 100vh;
 }
 
+header #first-header {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 header .container {
-  height: 100vh;
   position: relative;
 }
 
 header .container .col-md-6 {
   position: absolute;
-  top: 45%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-@media (max-width: 768px) {
-  header .container .col-md-6 {
-    top: 50%;
-  }
 }
 
 header .container .col-md-6 .showcase-left {
@@ -102,6 +153,7 @@ header .container .col-md-6 .showcase-left .free-demo {
 @media (max-width: 320px) {
   header .container .col-md-6 .showcase-left .free-demo {
     padding: 10px 6px;
+    font-size: 14px;
   }
 }
 
@@ -129,6 +181,12 @@ header .container .col-md-6 .showcase-left .sign-up {
   }
 }
 
+@media (max-width: 992px) {
+  header ul.navbar-nav {
+    text-align: center;
+  }
+}
+
 header ul.navbar-nav .nav-item {
   margin-left: 30px;
 }
@@ -152,6 +210,13 @@ header ul.navbar-nav .nav-item .login:hover,
 header ul.navbar-nav .nav-item .sign-up:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+
+@media (max-width: 992px) {
+  header ul.navbar-nav .nav-item .login,
+  header ul.navbar-nav .nav-item .sign-up {
+    margin-bottom: 16px;
+  }
 }
 
 header ul.navbar-nav .nav-item .sign-up {
