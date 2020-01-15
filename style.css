@@ -382,10 +382,10 @@ header ul.navbar-nav .nav-item .nav-link {
 
 @media (max-width: 768px) {
   #benefites .benefites-right .benefites-card {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
