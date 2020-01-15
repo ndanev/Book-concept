@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   width: 100%;
   background-image: url("./images/showcase-right.png");
@@ -25,6 +29,12 @@ header .container .col-md-6 {
           transform: translateY(-50%);
 }
 
+@media (max-width: 768px) {
+  header .container .col-md-6 {
+    top: 50%;
+  }
+}
+
 header .container .col-md-6 .showcase-left {
   padding-left: 16px;
 }
@@ -35,6 +45,12 @@ header .container .col-md-6 .showcase-left h1 {
   font-size: 60px;
   color: #302e2f;
   line-height: 0.95;
+}
+
+@media (max-width: 768px) {
+  header .container .col-md-6 .showcase-left h1 {
+    font-size: 40px;
+  }
 }
 
 header .container .col-md-6 .showcase-left p {
@@ -59,6 +75,12 @@ header .container .col-md-6 .showcase-left .free-demo {
   margin-right: 20px;
 }
 
+@media (max-width: 768px) {
+  header .container .col-md-6 .showcase-left .free-demo {
+    padding: 10px 20px;
+  }
+}
+
 header .container .col-md-6 .showcase-left .sign-up {
   padding: 12px 45px;
   border-radius: 21px;
@@ -67,6 +89,12 @@ header .container .col-md-6 .showcase-left .sign-up {
   color: #edcb50;
   font-weight: 900;
   background-color: #302e2f;
+}
+
+@media (max-width: 768px) {
+  header .container .col-md-6 .showcase-left .sign-up {
+    padding: 10px 35px;
+  }
 }
 
 header ul.navbar-nav .nav-item {
@@ -108,16 +136,34 @@ header ul.navbar-nav .nav-item .nav-link {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  #services h1 {
+    font-size: 30px;
+  }
+}
+
 #services h1 #services-icon-1 {
   position: absolute;
   top: -25px;
   margin-left: 30px;
 }
 
+@media (max-width: 768px) {
+  #services h1 #services-icon-1 {
+    margin-left: 20px;
+  }
+}
+
 #services h1 #services-icon-2 {
   position: relative;
   top: -20px;
   right: -35px;
+}
+
+@media (max-width: 768px) {
+  #services h1 #services-icon-2 {
+    right: -25px;
+  }
 }
 
 #services .services-desc {
@@ -131,6 +177,13 @@ header ul.navbar-nav .nav-item .nav-link {
   padding-left: 10%;
   padding-right: 10%;
   font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  #services .services-desc p {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 #services .services-card {
@@ -149,6 +202,12 @@ header ul.navbar-nav .nav-item .nav-link {
           align-items: center;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  #services .services-card {
+    margin-bottom: 20px;
+  }
 }
 
 #services .services-card h3 {
@@ -170,6 +229,13 @@ header ul.navbar-nav .nav-item .nav-link {
   padding-right: 20%;
 }
 
+@media (max-width: 768px) {
+  #services .services-card p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 #rated-books {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -183,6 +249,12 @@ header ul.navbar-nav .nav-item .nav-link {
   margin-bottom: 35px;
 }
 
+@media (max-width: 768px) {
+  #rated-books h1 {
+    font-size: 40px;
+  }
+}
+
 #rated-books .rated-books {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,6 +262,8 @@ header ul.navbar-nav .nav-item .nav-link {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #rated-books .rated-books .book-card {
@@ -197,6 +271,12 @@ header ul.navbar-nav .nav-item .nav-link {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #rated-books .rated-books .book-card {
+    margin-bottom: 20px;
+  }
 }
 
 #rated-books .rated-books .book-card:hover > .book-hover {
@@ -262,6 +342,12 @@ header ul.navbar-nav .nav-item .nav-link {
   font-size: 55px;
   text-align: center;
   margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  #benefites .benefites-right h1 {
+    font-size: 35px;
+  }
 }
 
 #benefites .benefites-right .benefites-card {
@@ -354,6 +440,15 @@ header ul.navbar-nav .nav-item .nav-link {
           align-items: center;
   padding-left: 15%;
   padding-right: 15%;
+}
+
+@media (max-width: 768px) {
+  #happy-customers .slider-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #happy-customers .slider-content img {
