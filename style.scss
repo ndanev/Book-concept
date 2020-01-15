@@ -314,6 +314,12 @@ header {
     background-position: center;
     padding-top: 70px;
 
+    @media (max-width: 768px) {
+        & {
+            background-size: inherit;
+        }
+    }
+
     .benefites-right {
         h1 {
             font-family: "Dancing Script", cursive;
@@ -336,6 +342,12 @@ header {
             align-items: center;
             justify-content: center;
             margin-bottom: 20px;
+
+            @media (max-width: 768px) {
+                & {
+                    flex-direction: row;
+                }
+            }
 
             img {
                 width: 80px;
@@ -494,6 +506,106 @@ footer {
     background-position: center;
     height: 100vh;
     position: relative;
+
+    .footer-card {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            & {
+                left: 45%;
+            }
+        }
+
+        h1 {
+            font-size: 60px;
+            font-family: "Montserrat", sans-serif;
+            color: #302e2f;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+            @media (max-width: 768px) {
+                & {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 100px;
+            font-family: "Montserrat", sans-serif;
+            color: #edcb50;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+            @media (max-width: 768px) {
+                & {
+                    font-size: 60px;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 50px;
+            font-family: "Montserrat", sans-serif;
+            color: #302e2f;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+
+            @media (max-width: 768px) {
+                & {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        div {
+            transform: rotate(1deg);
+            margin-top: 100px;
+
+            @media (max-width: 768px) {
+                & {
+                    margin-top: 50px;
+                }
+            }
+
+            @media (max-width: 320px) {
+                & {
+                    margin-top: -25px;
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #302e2f;
+            color: #edcb50;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 900;
+            font-size: 40px;
+            padding: 20px 50px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            display: block;
+
+            @media (max-width: 768px) {
+                & {
+                    padding: 8px 30px;
+                    font-size: 25px;
+                }
+            }
+
+            @media (max-width: 320px) {
+                & {
+                    padding: 8px 20px;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
 
     .footer-bottom {
         padding-top: 10px;

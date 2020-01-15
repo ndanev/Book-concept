@@ -342,6 +342,12 @@ header ul.navbar-nav .nav-item .nav-link {
   padding-top: 70px;
 }
 
+@media (max-width: 768px) {
+  #benefites {
+    background-size: inherit;
+  }
+}
+
 #benefites .benefites-right h1 {
   font-family: "Dancing Script", cursive;
   color: #302e2f;
@@ -372,6 +378,15 @@ header ul.navbar-nav .nav-item .nav-link {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #benefites .benefites-right .benefites-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 #benefites .benefites-right .benefites-card img {
@@ -533,6 +548,107 @@ footer {
   background-position: center;
   height: 100vh;
   position: relative;
+}
+
+footer .footer-card {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  footer .footer-card {
+    left: 45%;
+  }
+}
+
+footer .footer-card h1 {
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  color: #302e2f;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  footer .footer-card h1 {
+    font-size: 40px;
+  }
+}
+
+footer .footer-card h2 {
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+  color: #edcb50;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  footer .footer-card h2 {
+    font-size: 60px;
+  }
+}
+
+footer .footer-card h3 {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: #302e2f;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  footer .footer-card h3 {
+    font-size: 30px;
+  }
+}
+
+footer .footer-card div {
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  footer .footer-card div {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  footer .footer-card div {
+    margin-top: -25px;
+  }
+}
+
+footer .footer-card a {
+  text-decoration: none;
+  background-color: #302e2f;
+  color: #edcb50;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  padding: 20px 50px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  footer .footer-card a {
+    padding: 8px 30px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  footer .footer-card a {
+    padding: 8px 20px;
+    font-size: 25px;
+  }
 }
 
 footer .footer-bottom {
