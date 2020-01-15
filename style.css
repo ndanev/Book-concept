@@ -465,6 +465,7 @@ header ul.navbar-nav .nav-item .nav-link {
 @media (max-width: 768px) {
   #happy-customers .slider-content img {
     margin-right: 0px;
+    margin-bottom: 20px;
   }
 }
 
