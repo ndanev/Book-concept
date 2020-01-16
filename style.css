@@ -666,7 +666,7 @@ footer {
 footer .footer-card {
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 49%;
   text-align: center;
 }
 
@@ -710,7 +710,6 @@ footer .footer-card h3 {
   font-family: "Montserrat", sans-serif;
   color: #302e2f;
   text-transform: uppercase;
-  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -722,7 +721,7 @@ footer .footer-card h3 {
 footer .footer-card div {
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 @media (max-width: 768px) {
