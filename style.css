@@ -654,7 +654,7 @@ header ul.navbar-nav .nav-item .nav-link {
   }
 }
 
-footer {
+#sign-up-bottom {
   background-image: url("./images/footer-bg-image.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -672,13 +672,20 @@ footer {
           justify-content: center;
 }
 
-footer .footer-card {
+#sign-up-bottom .sign-up-bottom-card {
   margin-left: 12%;
   margin-top: 10%;
   text-align: center;
 }
 
-footer .footer-card h1 {
+@media (max-width: 768px) {
+  #sign-up-bottom .sign-up-bottom-card {
+    margin-left: 30%;
+    margin-top: 30%;
+  }
+}
+
+#sign-up-bottom .sign-up-bottom-card h1 {
   font-size: 60px;
   font-family: "Montserrat", sans-serif;
   color: #302e2f;
@@ -688,12 +695,12 @@ footer .footer-card h1 {
 }
 
 @media (max-width: 768px) {
-  footer .footer-card h1 {
+  #sign-up-bottom .sign-up-bottom-card h1 {
     font-size: 40px;
   }
 }
 
-footer .footer-card h2 {
+#sign-up-bottom .sign-up-bottom-card h2 {
   font-size: 100px;
   font-family: "Montserrat", sans-serif;
   color: #edcb50;
@@ -702,12 +709,12 @@ footer .footer-card h2 {
 }
 
 @media (max-width: 768px) {
-  footer .footer-card h2 {
+  #sign-up-bottom .sign-up-bottom-card h2 {
     font-size: 60px;
   }
 }
 
-footer .footer-card h3 {
+#sign-up-bottom .sign-up-bottom-card h3 {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
   color: #302e2f;
@@ -715,30 +722,30 @@ footer .footer-card h3 {
 }
 
 @media (max-width: 768px) {
-  footer .footer-card h3 {
+  #sign-up-bottom .sign-up-bottom-card h3 {
     font-size: 30px;
   }
 }
 
-footer .footer-card div {
+#sign-up-bottom .sign-up-bottom-card div {
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
   margin-top: 50px;
 }
 
 @media (max-width: 768px) {
-  footer .footer-card div {
+  #sign-up-bottom .sign-up-bottom-card div {
     margin-top: 50px;
   }
 }
 
 @media (max-width: 320px) {
-  footer .footer-card div {
-    margin-top: -25px;
+  #sign-up-bottom .sign-up-bottom-card div {
+    margin-top: 25px;
   }
 }
 
-footer .footer-card a {
+#sign-up-bottom .sign-up-bottom-card a {
   text-decoration: none;
   background-color: #302e2f;
   color: #edcb50;
@@ -751,34 +758,34 @@ footer .footer-card a {
 }
 
 @media (max-width: 768px) {
-  footer .footer-card a {
+  #sign-up-bottom .sign-up-bottom-card a {
     padding: 8px 30px;
     font-size: 25px;
   }
 }
 
 @media (max-width: 320px) {
-  footer .footer-card a {
+  #sign-up-bottom .sign-up-bottom-card a {
     padding: 8px 20px;
     font-size: 25px;
   }
 }
 
-.footer-bottom {
+footer {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #302e2f;
   width: 100%;
 }
 
-.footer-bottom p {
+footer p {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
-  .footer-bottom p {
+  footer p {
     font-size: 14px;
   }
 }

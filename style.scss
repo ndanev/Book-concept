@@ -476,13 +476,11 @@ header {
             .carousel-control-next-icon:after {
                 content: url("./images/arrow-right.png");
                 font-size: 55px;
-                // color: red;
             }
 
             .carousel-control-prev-icon:after {
                 content: url("./images/arrow-left.png");
                 font-size: 55px;
-                // color: red;
             }
         }
     }
@@ -591,7 +589,7 @@ header {
     }
 }
 
-footer {
+#sign-up-bottom {
     background-image: url("./images/footer-bg-image.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -603,19 +601,15 @@ footer {
     align-items: center;
     justify-content: center;
 
-    .footer-card {
-        // position: absolute;
-        // top: 40%;
-        // left: 49%;
-        // text-align: center;
-
+    .sign-up-bottom-card {
         margin-left: 12%;
         margin-top: 10%;
         text-align: center;
 
         @media (max-width: 768px) {
             & {
-                // left: 45%;
+                margin-left: 30%;
+                margin-top: 30%;
             }
         }
 
@@ -653,7 +647,6 @@ footer {
             font-family: "Montserrat", sans-serif;
             color: #302e2f;
             text-transform: uppercase;
-            // margin-bottom: 50px;
 
             @media (max-width: 768px) {
                 & {
@@ -674,7 +667,7 @@ footer {
 
             @media (max-width: 320px) {
                 & {
-                    margin-top: -25px;
+                    margin-top: 25px;
                 }
             }
         }
@@ -689,7 +682,6 @@ footer {
             padding: 20px 50px;
             border-radius: 30px;
             text-transform: uppercase;
-            // display: block;
 
             @media (max-width: 768px) {
                 & {
@@ -708,13 +700,10 @@ footer {
     }
 }
 
-.footer-bottom {
+footer {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #302e2f;
-    // position: absolute;
-    // bottom: 0;
-    // left: 0;
     width: 100%;
 
     p {
