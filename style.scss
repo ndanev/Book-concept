@@ -599,15 +599,23 @@ footer {
     height: 100vh;
     position: relative;
 
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
     .footer-card {
-        position: absolute;
-        top: 40%;
-        left: 49%;
+        // position: absolute;
+        // top: 40%;
+        // left: 49%;
+        // text-align: center;
+
+        margin-left: 12%;
+        margin-top: 10%;
         text-align: center;
 
         @media (max-width: 768px) {
             & {
-                left: 45%;
+                // left: 45%;
             }
         }
 
@@ -681,7 +689,7 @@ footer {
             padding: 20px 50px;
             border-radius: 30px;
             text-transform: uppercase;
-            display: block;
+            // display: block;
 
             @media (max-width: 768px) {
                 & {
